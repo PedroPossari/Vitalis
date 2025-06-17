@@ -1,6 +1,6 @@
 [build]
   command = "npm install --legacy-peer-deps && npx prisma generate && npm run build"
-  publish = "."
+  publish = ".next"   # <--- aqui
 
 [dev]
   command = "npm run dev"
