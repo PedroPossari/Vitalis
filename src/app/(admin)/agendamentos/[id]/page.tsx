@@ -64,6 +64,7 @@ export default function Page() {
             pacienteId: agendamento?.pacienteId ?? 0,
             medicoId: agendamento?.medicoId ?? 0,
         },
+        
     });
 
     const getStatusColor = (value: string) => {
