@@ -1,0 +1,14 @@
+[build]
+  command = "npm install --legacy-peer-deps && npm run build"
+  publish = "out"
+
+[dev]
+  command = "npm run dev"
+  port = 3000
+
+[functions]
+  directory = "netlify/functions"
+
+[plugins]
+  # Plugin oficial para Next.js no Netlify
+  package = "@netlify/plugin-nextjs"
