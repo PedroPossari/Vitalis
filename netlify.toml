@@ -1,6 +1,7 @@
 [build]
   command = "npm install --legacy-peer-deps && npm run build"
-  publish = "out"
+  publish = "."
+  # ou use "out" apenas se estiver usando `next export`
 
 [dev]
   command = "npm run dev"
@@ -9,6 +10,5 @@
 [functions]
   directory = "netlify/functions"
 
-[plugins]
-  # Plugin oficial para Next.js no Netlify
+[[plugins]]
   package = "@netlify/plugin-nextjs"
