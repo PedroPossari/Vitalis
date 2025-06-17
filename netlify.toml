@@ -1,7 +1,6 @@
 [build]
   command = "npm install --legacy-peer-deps && npm run build"
   publish = "."
-  # ou use "out" apenas se estiver usando `next export`
 
 [dev]
   command = "npm run dev"
